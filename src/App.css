@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+.main{
+  background-color: gray;
+  height: 200px;
+  width : 90%;
+  margin: 5%;
+  padding: 20px;
+}
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+}
+input[type="text"] {
+    margin : 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 15px;
+    outline: none;
+}
+.wrapper {
+  margin-top: 7%;
+  padding: 30px;
+}
+.row {
+  /* width: 100%; */
+  display: grid;
+}
+
+.row_name {
+  grid-template-columns: repeat(4, 1fr);
+}
+.poster{
+  align-items: center;
+  padding-left: 20px;
+
+}
+.card_body{
+  color: antiquewhite;
+  overflow:hidden;
+  font-size: 10px;
+  padding: 10px;
+}
+.title{
+  color: antiquewhite;
+  font-size: 20px;
+  padding: 10px;
+  font-family:ui-rounded;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .main{
+    margin: auto;
+    max-width: 1400px;
+  }
+  .wrapper {
+    margin: auto;
+    max-width: 1600px;
+  }
+  .row_name {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 998px) {
+  .main{
+    margin: auto;
+    max-width: 900px;
+  }
+  .wrapper {
+    max-width: 1200rem;
+    margin: auto;
+  }
+  .row_name {
+    grid-template-columns: 1fr 1fr;
+  }
+  input[radio]{
+    width: 40px;
+
+  }
+
+  input[text] {
+    width: 90;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main{
+    margin: auto;
+    max-width: 800px;
+  }
+  .wrapper{
+    max-width: 1120rem;
+    margin: auto;
+  }
+  .row_name {
+    grid-template-columns: 1fr;
+  }
+  input[radio]{
+    width: 80px;
+
+  }
+}
